@@ -32,14 +32,13 @@ export default function ChatbotDemo() {
 
     try {
       // Call the API route that will use the RGA function
-      const response = await fetch('/api/chat', {
+      const response = await fetch('/api/ask', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ question: input }),
       });
-
       const data = await response.json();
       
       // Add assistant message to chat

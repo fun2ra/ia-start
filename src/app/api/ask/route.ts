@@ -1,4 +1,5 @@
-import { NextResponse } from 'next/server';
+// app/api/ask/route.ts
+import { NextResponse } from 'next/server'; 
 import rga from '@/controllers/rga';
 
 export async function POST(request: Request) {
